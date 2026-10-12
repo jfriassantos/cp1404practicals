@@ -1,3 +1,5 @@
+import random
+
 MINIMUM_NUMBER = 1
 MAXIMUM_NUMBER = 45
 
@@ -18,7 +20,10 @@ def get_valid_number(prompt):
 
 
 def print_quick_picks(number_of_quick_picks):
-    """"""
-
+    """Print rows of 6 numbers according to the user."""
+    for i in range(number_of_quick_picks):
+        for index in range(6):
+            print(f"{random.randint(MINIMUM_NUMBER, MAXIMUM_NUMBER):2}", end=" ")
+        print()
 
 main()
