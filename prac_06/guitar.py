@@ -1,7 +1,7 @@
 """CP1404: Guitar Class Task
 For All Three Programs under this task:
 Estimate: 45 Minutes
-  Actual:
+  Actual: 40 Minutes
 """
 import datetime
 
