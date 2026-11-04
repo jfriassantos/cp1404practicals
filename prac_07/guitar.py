@@ -19,6 +19,9 @@ class Guitar:
         """Return a formatted string."""
         return f"{self.name} ({self.year}) : ${self.cost:.2f}"
 
+    def __lt__(self, other):
+        return self.year < other.year
+
     def get_age(self):
         """Calculate age of Guitar."""
         current_year = datetime.datetime.now().year
