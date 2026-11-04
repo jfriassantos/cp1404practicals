@@ -8,9 +8,9 @@ def main():
     while guitar_name != "":
         guitar_year = int(input("Year: "))
         guitar_cost = float(input("Cost: "))
-        guitar = Guitar(guitar_name, guitar_year, guitar_cost)
-        guitars.append(guitar)
-        print(f"{guitar} added")
+        current_guitar = Guitar(guitar_name, guitar_year, guitar_cost)
+        guitars.append(current_guitar)
+        print(f"{current_guitar} added")
         print()
         guitar_name = input("Name: ")
     print(f"\n ... snip ... \n")
