@@ -31,5 +31,13 @@ class ConvertMilesToKilometres(App):
         except ValueError:
             self.output_text = "0"
 
+    def handle_increment(self, value, increment):
+        """Handle incrementing amount of kilometres."""
+        try:
+            result = float(value) + increment
+            self.root.ids.input_text.text = f"{result}"
+        except ValueError:
+            pass
+
 
 ConvertMilesToKilometres().run()
