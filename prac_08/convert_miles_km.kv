@@ -15,7 +15,7 @@ BoxLayout:
                 text: 'Down'
     Button:
         text: 'Convert miles to km'
+        on_press: app.handle_convert(input_text.text)
     Label:
-        id: output_text
-        text: '54.71756'
+        text: app.output_text
         color: (1, 1, 0, 1)
