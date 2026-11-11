@@ -37,7 +37,8 @@ class ConvertMilesToKilometres(App):
             result = float(value) + increment
             self.root.ids.input_text.text = f"{result}"
         except ValueError:
-            pass
+            result = 0 + increment
+            self.root.ids.input_text.text = f"{result}"
 
 
 ConvertMilesToKilometres().run()
